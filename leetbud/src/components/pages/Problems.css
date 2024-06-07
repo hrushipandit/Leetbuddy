@@ -1,0 +1,47 @@
+.problems-container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adds a subtle shadow around the container */
+  }
+  
+  ul {
+    list-style: none; /* Removes bullet points from the list */
+    padding: 0;
+  }
+  
+  .problem-item {
+    margin-bottom: 10px; /* Adds space between problem entries */
+    padding: 10px;
+    background-color: #f9f9f9; /* Light grey background for each problem */
+    border-radius: 5px; /* Rounded corners for each item */
+  }
+  
+  .problem-item p {
+    margin: 0;
+    display: inline-block;
+    margin-right: 10px; /* Space between the problem name and buttons */
+  }
+  
+  .add-link, .edit-button, .delete-button {
+    padding: 5px 10px;
+    text-decoration: none; /* Removes underline from the link */
+    color: white; /* White text for buttons and links */
+    background-color: #007BFF; /* Blue background for better visibility */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .edit-button {
+    background-color: #28a745; /* Green background for edit buttons */
+  }
+  
+  .delete-button {
+    background-color: #dc3545; /* Red background for delete buttons */
+  }
+  
+  .add-link {
+    background-color: #17a2b8; /* Teal background for add new problem link */
+  }
+  
