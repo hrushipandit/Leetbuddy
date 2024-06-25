@@ -3,11 +3,22 @@ const Schema = mongoose.Schema;
 
 // Create Schema
 const UserEntrySchema = new Schema({
+
+    googleId: {
+        type: String,
+        required: true,
+        unique: true
+    },
+
     code: {
         type: String,
         required: true
     },
     notes: {
+        type: String,
+        required: true
+    },
+    question_name: {
         type: String,
         required: true
     },

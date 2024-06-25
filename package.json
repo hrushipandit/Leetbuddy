@@ -1,5 +1,7 @@
 {
   "dependencies": {
-    "react-router-dom": "^6.23.1"
+    "react-router-dom": "^6.23.1",
+    "proxy": "http://localhost:5000"
+
   }
 }

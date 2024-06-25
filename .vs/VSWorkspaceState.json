@@ -3,11 +3,10 @@
     "",
     "\\leetbud",
     "\\leetbud\\BackendServices",
-    "\\leetbud\\BackendServices\\Models",
-    "\\leetbud\\BackendServices\\Routes",
-    "\\leetbud\\public",
+    "\\leetbud\\BackendServices\\routes",
     "\\leetbud\\src",
-    "\\leetbud\\src\\components"
+    "\\leetbud\\src\\components",
+    "\\leetbud\\src\\components\\pages"
   ],
   "SelectedNode": "\\leetbud\\BackendServices\\server.js",
   "PreviewInSolutionExplorer": false

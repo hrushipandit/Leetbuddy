@@ -3,7 +3,7 @@ import './App.css';
 import { Navbar} from './components/Navbar'
 import { Routes,Route } from 'react-router-dom';
 import {Practice} from './components/pages/Practice';
-import {Problems} from './components/pages/Problems';
+import Problems from './components/pages/Problems';
 import {Home} from './components/pages/Home';
 import {Login} from './components/pages/Login';
 import {AddEditProblems} from './components/pages/AddEditProblems';
@@ -19,6 +19,7 @@ function App() {
           <Route path="/problems" element={<Problems />} />
           <Route path="/problems" element={<Login />} />
           <Route path="/AddEditProblems" element={<AddEditProblems />} />
+          <Route path="/AddEditProblems/:id" element={<AddEditProblems />} />
         </Routes>
     </div>
   );

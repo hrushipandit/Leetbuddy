@@ -17,7 +17,8 @@ export const Navbar = () => {
             </ul>
         </div>
         <div className="nav-right">
-            <button className="login-button">Login</button>
+              <a href="http://localhost:5000/auth/google">Sign In with Google</a>
+
         </div>
     </nav>
   )
