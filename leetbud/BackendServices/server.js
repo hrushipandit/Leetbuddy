@@ -12,7 +12,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // Connect to MongoDB
-const mongoURI = process.env.MONGO_URI; // It's best to move sensitive info to environment variables
+const mongoURI = process.env.MONGO_URI;
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('MongoDB connected'))
     .catch(err => console.log(err));
@@ -30,8 +30,8 @@ app.use(session({
     resave: false,
     saveUninitialized: true,
     cookie: {
-        secure: false, // Set to true in production when using HTTPS
-        httpOnly: true
+        secure: false, // Should be true in production with HTTPS
+        httpOnly: true  // Ensures cookies are sent only over HTTP(S), not client JavaScript, helping to protect against cross-site scripting attacks.
     }
 }));
 
@@ -46,43 +46,50 @@ passport.use(new GoogleStrategy({
     clientSecret: process.env.GOOGLE_CLIENT_SECRET,
     callbackURL: "http://localhost:5000/auth/google/callback"
 },
-    function (accessToken, refreshToken, profile, cb) {
-        cb(null, profile);
-        console.log(profile);
+    async (accessToken, refreshToken, profile, cb) => {
+        try {
+            // Check if the user already exists in your database
+            let user = await UserEntry.findOne({ googleId: profile.id });
+            if (!user) {
+                // If user is not found, create a new user
+                user = await UserEntry.create({
+                    googleId: profile.id,
+                    code: '123',
+                    notes: '123',
+                    question_name: '1243',
+                    date:'123',
+                });
+            }
+            return cb(null, user); // Pass user to serializeUser
+        } catch (err) {
+            return cb(err, null);
+        }
     }));
 
 passport.serializeUser((user, done) => {
-    done(null, user.id);  // Store only googleId or a unique user identifier
-    console.log('Serialized User');
+    // console.log(user);  // Log to confirm the structure of the user object
+    console.log('User Serialized');
+    done(null, user.googleId);  // Ensure user.id is the correct identifier
 });
-
-passport.deserializeUser(async (id, done) => {
+passport.deserializeUser(async (googleId, done) => {
     try {
-        const user = await UserEntry.findOne({ googleId: id });
+
+        console.log('User Deserialized');
+        const user = await UserEntry.findOne({ googleId: googleId });
         done(null, user);
     } catch (err) {
         done(err, null);
     }
 });
 
-// Google Auth Routes
-app.get('/auth/google', (req, res, next) => {
-    console.log('Attempting to authenticate with Google');
-    passport.authenticate('google', { scope: ['profile', 'email'] })(req, res, next);
-});
-
-
-app.get('/auth/google/callback',
-
-    passport.authenticate('google', { failureRedirect: '/login' }),
-    function (req, res) {
-        // Successful authentication, redirect home.
-        res.redirect('http://localhost:3000');
-    });
-
 // Define routes
 const problemRoutes = require('./routes/problems');
+const authRoutes = require('./routes/auth');
+
 app.use('/api/problems', problemRoutes);
+
+
+app.use(authRoutes);
 
 
 // Start server

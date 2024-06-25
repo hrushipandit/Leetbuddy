@@ -17,7 +17,7 @@ function Problems() {
 
 
     useEffect(() => {
-        axios.get('http://localhost:5000/api/problems')
+        axios.get('http://localhost:5000/api/problems', { withCredentials: true })
             .then(response => {
                 setEntries(response.data);
                 console.log(entries);// Update state with fetched data
@@ -26,7 +26,7 @@ function Problems() {
     }, []); // Empty dependency array means this runs once on component mount
 
     const fetchEntries = () => {
-        axios.get('http://localhost:5000/api/problems')
+        axios.get('http://localhost:5000/api/problems', { withCredentials: true })
             .then(response => {
                 setEntries(response.data);
                 console.log(entries);

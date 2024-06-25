@@ -3,8 +3,10 @@
     "",
     "\\leetbud",
     "\\leetbud\\BackendServices",
-    "\\leetbud\\Frontend"
+    "\\leetbud\\Frontend",
+    "\\leetbud\\Frontend\\src",
+    "\\leetbud\\Frontend\\src\\components"
   ],
-  "SelectedNode": "\\leetbud\\BackendServices\\package-lock.json",
+  "SelectedNode": "\\leetbud\\BackendServices\\routes",
   "PreviewInSolutionExplorer": false
 }
