@@ -7,13 +7,20 @@ router.get('/logout', (req, res) => {
     if (!req.user) {
         return res.status(400).send('No user currently logged in.');
     }
-    req.logout();
-    req.session.destroy((err) => {
+    req.logout((err) => {
         if (err) {
-            return res.status(500).send('Failed to log out due to server error.');
+            console.log(err);
+            return res.status(500).send('Failed to log out.');
         }
-        res.clearCookie('connect.sid');
-        res.redirect('/');
+        req.session.destroy((err) => {
+            if (err) {
+                console.log(err);
+                return res.status(500).send('Failed to destroy session.');
+            }
+            res.clearCookie('connect.sid');
+    //        res.redirect('/');  // Consider redirecting to a server-side route that handles GET '/'
+            console.log("logout successful");
+        });
     });
 });
 
@@ -30,5 +37,16 @@ router.get('/auth/google/callback',
         // Successful authentication, redirect home.
         res.redirect('http://localhost:3000');
     });
+
+
+
+
+router.get('/auth/login/status', (req, res) => {
+    if (req.isAuthenticated()) {  // Passport provides this method to check authentication status
+        res.json({ isLoggedIn: true, user: req.user }); // Optionally, send user data
+    } else {
+        res.json({ isLoggedIn: false });
+    }
+});
 
 module.exports = router;

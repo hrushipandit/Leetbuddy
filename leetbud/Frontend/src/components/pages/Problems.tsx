@@ -35,7 +35,7 @@ function Problems() {
     };
 
     const deleteEntry = (id: string) => {
-        axios.delete(`http://localhost:5000/api/problems/${id}`)
+        axios.delete(`http://localhost:5000/api/problems/${id}`, { withCredentials: true })
             .then(() => {
                 fetchEntries();
             })
@@ -43,7 +43,7 @@ function Problems() {
     };
 
     const handleEdit = (id: string) => {
-        navigate(`/editProblem/${id}`); // Redirects to the edit page with the problem ID
+        navigate(`/AddEditProblems/${id}`); // Redirects to the edit page with the problem ID
     };
 
 

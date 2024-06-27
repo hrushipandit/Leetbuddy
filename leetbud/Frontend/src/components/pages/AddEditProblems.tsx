@@ -4,6 +4,7 @@ import './AddEditProblems.css'
 import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios'; // Import Axios for HTTP requests
 export const AddEditProblems = () => {
+    axios.defaults.withCredentials = true;
     const navigate = useNavigate(); // Hook for navigation
     const { id } = useParams(); 
     const[code, setCode] = useState('');
@@ -16,6 +17,7 @@ export const AddEditProblems = () => {
             axios.get(`http://localhost:5000/api/problems/${id}`)
                 .then(response => {
                     const { code, notes, question_name } = response.data;
+                    console.log(response.data);
                     setCode(code);
                     setNotes(notes);
                     setQuestion_name(question_name);
@@ -34,14 +36,19 @@ export const AddEditProblems = () => {
     };
 
     const handleSubmit = async () => {
-        const payload = { code, notes, question_name };
+        const payload = { code, notes, question_name }; // No Google ID sent from client
         const url = `http://localhost:5000/api/problems/${id ? id : ''}`;
         const method = id ? 'put' : 'post';
 
         try {
-            const response = await axios[method](url, payload);
+            const response = await axios({
+                method: method,
+                url: url,
+                data: payload,
+                withCredentials: true
+            });
             console.log('Saved to MongoDB:', response.data);
-            navigate(-1); // Go back after submission
+            navigate(-1);
         } catch (error) {
             console.error('Error saving to MongoDB:', error);
         }

@@ -7,7 +7,6 @@ const UserEntrySchema = new Schema({
     googleId: {
         type: String,
         required: true,
-        unique: true
     },
 
     code: {

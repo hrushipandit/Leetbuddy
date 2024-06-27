@@ -54,10 +54,9 @@ passport.use(new GoogleStrategy({
                 // If user is not found, create a new user
                 user = await UserEntry.create({
                     googleId: profile.id,
-                    code: '123',
-                    notes: '123',
-                    question_name: '1243',
-                    date:'123',
+                    code: 123,
+                    notes: 123,
+                    question_name: 123123,
                 });
             }
             return cb(null, user); // Pass user to serializeUser
@@ -82,6 +81,11 @@ passport.deserializeUser(async (googleId, done) => {
     }
 });
 
+app.use((req, res, next) => {
+    console.log("Session Data:", req.session);
+    console.log("User Data:", req.user);
+    next();
+});
 // Define routes
 const problemRoutes = require('./routes/problems');
 const authRoutes = require('./routes/auth');
@@ -90,7 +94,5 @@ app.use('/api/problems', problemRoutes);
 
 
 app.use(authRoutes);
-
-
 // Start server
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
