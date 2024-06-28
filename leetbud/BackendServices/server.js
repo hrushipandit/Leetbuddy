@@ -5,11 +5,13 @@ const session = require('express-session');
 const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const UserEntry = require('./models/UserEntry'); // Ensure this path is correct
-
+const { Configuration, OpenAIApi } = require('openai');
 require('dotenv').config();
 
 const app = express();
 const PORT = process.env.PORT || 5000;
+
+
 
 // Connect to MongoDB
 const mongoURI = process.env.MONGO_URI;
@@ -34,6 +36,7 @@ app.use(session({
         httpOnly: true  // Ensures cookies are sent only over HTTP(S), not client JavaScript, helping to protect against cross-site scripting attacks.
     }
 }));
+
 
 
 // Passport initialization
@@ -89,10 +92,10 @@ app.use((req, res, next) => {
 // Define routes
 const problemRoutes = require('./routes/problems');
 const authRoutes = require('./routes/auth');
+const openAIRoutes = require('./routes/openai');
 
 app.use('/api/problems', problemRoutes);
-
-
 app.use(authRoutes);
+app.use(openAIRoutes);
 // Start server
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

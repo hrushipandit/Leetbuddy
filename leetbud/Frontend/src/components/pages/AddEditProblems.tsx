@@ -10,17 +10,19 @@ export const AddEditProblems = () => {
     const[code, setCode] = useState('');
     const [notes, setNotes] = useState('');
     const [question_name, setQuestion_name] = useState('');
+    const [question, setQuestion] = useState('');
 
     useEffect(() => {
         if (id) {
             // If there's an ID, we're editing an existing problem
             axios.get(`http://localhost:5000/api/problems/${id}`)
                 .then(response => {
-                    const { code, notes, question_name } = response.data;
+                    const { code, notes, question_name, question } = response.data;
                     console.log(response.data);
                     setCode(code);
                     setNotes(notes);
                     setQuestion_name(question_name);
+                    setQuestion(question);
                 })
                 .catch(error => console.error('Error fetching data:', error));
         }
@@ -30,13 +32,8 @@ export const AddEditProblems = () => {
       navigate(-1); // Navigates to the previous page
     };
 
-    const handleGenerateNotes = () => {
-        // Implement note generation logic if needed
-        console.log('Generate Notes button clicked');
-    };
-
     const handleSubmit = async () => {
-        const payload = { code, notes, question_name }; // No Google ID sent from client
+        const payload = { code, notes, question_name , question }; // No Google ID sent from client
         const url = `http://localhost:5000/api/problems/${id ? id : ''}`;
         const method = id ? 'put' : 'post';
 
@@ -54,16 +51,36 @@ export const AddEditProblems = () => {
         }
     };
 
+    const handleGenerateNotes = async () => {
+        try {
+            const payload = { code, question, question_name };
+            const response = await axios.post('http://localhost:5000/generate-notes', payload, { withCredentials: true });
+            setNotes(response.data.generatedNotes);
+            console.log('Notes generated:', response.data.generatedNotes);
+        } catch (error) {
+            console.error('Error generating notes:', error);
+        }
+    };
+
     return (
         <div className="container">
             <h1 className="title">Add/Edit Problems</h1>
             <div className="question_name-section">
-                <label htmlFor="question_name">Add Question Here:</label>
+                <label htmlFor="question_name">Add Question Name Here:</label>
                 <textarea
                     id="question_name"
                     placeholder="Type your question_name here..."
                     value={question_name}
                     onChange={(e) => setQuestion_name(e.target.value)}
+                />
+            </div>
+            <div className="question-section">
+                <label htmlFor="code">Add Question Here:</label>
+                <textarea
+                    id="question"
+                    placeholder="Type your question here..."
+                    value={question}
+                    onChange={(e) => setQuestion(e.target.value)}
                 />
             </div>
             <div className="code-section">

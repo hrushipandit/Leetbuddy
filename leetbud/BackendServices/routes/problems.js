@@ -16,8 +16,8 @@ function isAuthenticated(req, res, next) {
 
 // Post Operation
 router.post('/', isAuthenticated, async (req, res) => {
-    const { code, notes, question_name } = req.body;
-    if (!code || !notes || !question_name) {
+    const { code, notes, question_name, question } = req.body;
+    if (!code || !notes || !question_name || !question) {
         return res.status(400).json({ message: 'Code, notes, and question name are required.' });
     }
     try {
@@ -26,6 +26,7 @@ router.post('/', isAuthenticated, async (req, res) => {
             code: code,                  // Corrected to use data from req.body
             notes: notes,                // Corrected to use data from req.body
             question_name: question_name, // Corrected to use data from req.body
+            question: question,
         });
         const entry = await newUserEntry.save();
         res.json(entry);
@@ -38,7 +39,7 @@ router.post('/', isAuthenticated, async (req, res) => {
 // Update Operation
 router.put('/:id', isAuthenticated, async (req, res) => {
     try {
-        const { code, notes, question_name } = req.body;
+        const { code, notes, question_name, question } = req.body;
         const entry = await UserEntry.findById(req.params.id);
         if (!entry) {
             return res.status(404).json({ error: 'No entry found with that ID' });
@@ -49,6 +50,7 @@ router.put('/:id', isAuthenticated, async (req, res) => {
         entry.code = code;
         entry.notes = notes;
         entry.question_name = question_name;
+        entry.question = question;
         await entry.save();
         res.json('Problem updated!');
     } catch (err) {
