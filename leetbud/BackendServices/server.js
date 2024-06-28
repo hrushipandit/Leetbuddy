@@ -67,7 +67,7 @@ passport.use(new GoogleStrategy({
 
 passport.serializeUser((user, done) => {
     // console.log(user);  // Log to confirm the structure of the user object
-    console.log('User Serialized');
+ //   console.log('User Serialized');
     done(null, user.googleId);  // Ensure user.id is the correct identifier
 });
 passport.deserializeUser(async (googleId, done) => {
@@ -82,8 +82,8 @@ passport.deserializeUser(async (googleId, done) => {
 });
 
 app.use((req, res, next) => {
-    console.log("Session Data:", req.session);
-    console.log("User Data:", req.user);
+ //   console.log("Session Data:", req.session);
+  //  console.log("User Data:", req.user);
     next();
 });
 // Define routes

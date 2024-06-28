@@ -24,7 +24,23 @@ const UserEntrySchema = new Schema({
     date: {
         type: Date,
         default: Date.now
-    }
+    },
+    eFactor: {
+        type: Number,
+        default: 2.5
+    },
+    repetition: {
+        type: Number,
+        default: 0
+    },
+    lastReviewed: {
+        type: Date,
+        default: Date.now
+    },
+    nextReviewDate: {
+        type: Date,
+        default: Date.now
+    },
 });
 
 module.exports = UserEntry = mongoose.model('userEntry', UserEntrySchema);
