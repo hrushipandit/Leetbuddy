@@ -11,6 +11,8 @@ export const AddEditProblems = () => {
     const [notes, setNotes] = useState('');
     const [question_name, setQuestion_name] = useState('');
     const [question, setQuestion] = useState('');
+    const [fetchingQuestion, setFetchingQuestion] = useState(false);
+    const [fetchedQuestion, setFetchedQuestion] = useState('');
 
     useEffect(() => {
         if (id) {
@@ -30,6 +32,27 @@ export const AddEditProblems = () => {
 
     const goBack = () => {
       navigate(-1); // Navigates to the previous page
+    };
+
+    const fetchLeetCodeQuestion = async () => {
+        if (!question_name.trim()) {
+            alert('Please enter a valid question name');
+            return;
+        }
+
+        setFetchingQuestion(true);
+
+        try {
+            const response = await axios.post('http://localhost:5000/fetch-leetcode-question', {
+                questionName: question_name
+            }, { withCredentials: true });
+
+            setFetchedQuestion(response.data.questionText);
+            setFetchingQuestion(false);
+        } catch (error) {
+            console.error('Error fetching question:', error);
+            setFetchingQuestion(false);
+        }
     };
 
     const handleSubmit = async () => {
@@ -69,13 +92,26 @@ export const AddEditProblems = () => {
                 <label htmlFor="question_name">Add Question Name Here:</label>
                 <textarea
                     id="question_name"
-                    placeholder="Type your question_name here..."
+                    placeholder="Type your question name here..."
                     value={question_name}
                     onChange={(e) => setQuestion_name(e.target.value)}
                 />
+                <button onClick={fetchLeetCodeQuestion} disabled={fetchingQuestion}>
+                    {fetchingQuestion ? 'Fetching...' : 'Fetch Question from LeetCode'}
+                </button>
             </div>
+            {fetchedQuestion && (
+                <div className="fetched-question-section">
+                    <label htmlFor="fetchedQuestion">Fetched Question:</label>
+                    <textarea
+                        id="fetchedQuestion"
+                        value={fetchedQuestion}
+                        readOnly
+                    />
+                </div>
+            )}
             <div className="question-section">
-                <label htmlFor="code">Add Question Here:</label>
+                <label htmlFor="question">Add Question Here:</label>
                 <textarea
                     id="question"
                     placeholder="Type your question here..."
@@ -95,7 +131,7 @@ export const AddEditProblems = () => {
             <div className="notes-section">
                 <label htmlFor="notes">Your Notes:</label>
                 <textarea
-                    id="question"
+                    id="notes"
                     placeholder="Write your notes here..."
                     value={notes}
                     onChange={(e) => setNotes(e.target.value)}
@@ -106,6 +142,7 @@ export const AddEditProblems = () => {
             <button className="go-back-button" onClick={goBack}>Go Back</button>
         </div>
     );
+
 };
 
 export default AddEditProblems

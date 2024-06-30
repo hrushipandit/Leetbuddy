@@ -93,9 +93,13 @@ app.use((req, res, next) => {
 const problemRoutes = require('./routes/problems');
 const authRoutes = require('./routes/auth');
 const openAIRoutes = require('./routes/openai');
+const excelRoutes = require('./routes/excel');
+const seleniumRoutes = require('./routes/selenium')
 
 app.use('/api/problems', problemRoutes);
 app.use(authRoutes);
 app.use(openAIRoutes);
+app.use(excelRoutes);
+app.use(seleniumRoutes);
 // Start server
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

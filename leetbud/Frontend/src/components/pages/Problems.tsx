@@ -52,6 +52,9 @@ function Problems() {
             <ul>
                 <li>
                     <Link to="/AddEditProblems" className="add-link">Add new Problems</Link>
+                    <button onClick={() => window.location.href = 'http://localhost:5000/download-entries'}>
+                        Download Entries
+                    </button>
                 </li>
 
                 {Array.isArray(entries) ? entries.map(entry => (
