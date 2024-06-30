@@ -3,13 +3,12 @@
     "",
     "\\leetbud",
     "\\leetbud\\BackendServices",
-    "\\leetbud\\BackendServices\\Models",
     "\\leetbud\\BackendServices\\routes",
     "\\leetbud\\Frontend",
     "\\leetbud\\Frontend\\src",
     "\\leetbud\\Frontend\\src\\components",
     "\\leetbud\\Frontend\\src\\components\\pages"
   ],
-  "SelectedNode": "\\leetbud\\BackendServices\\routes\\selenium.js",
+  "SelectedNode": "\\leetbud\\BackendServices",
   "PreviewInSolutionExplorer": false
 }

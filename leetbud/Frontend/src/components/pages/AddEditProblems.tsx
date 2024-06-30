@@ -49,6 +49,7 @@ export const AddEditProblems = () => {
 
             setFetchedQuestion(response.data.questionText);
             setFetchingQuestion(false);
+            setQuestion(response.data.questionText);
         } catch (error) {
             console.error('Error fetching question:', error);
             setFetchingQuestion(false);
@@ -100,17 +101,8 @@ export const AddEditProblems = () => {
                     {fetchingQuestion ? 'Fetching...' : 'Fetch Question from LeetCode'}
                 </button>
             </div>
-            {fetchedQuestion && (
-                <div className="fetched-question-section">
-                    <label htmlFor="fetchedQuestion">Fetched Question:</label>
-                    <textarea
-                        id="fetchedQuestion"
-                        value={fetchedQuestion}
-                        readOnly
-                    />
-                </div>
-            )}
-            <div className="question-section">
+           
+               <div className="question-section">
                 <label htmlFor="question">Add Question Here:</label>
                 <textarea
                     id="question"
@@ -119,6 +111,8 @@ export const AddEditProblems = () => {
                     onChange={(e) => setQuestion(e.target.value)}
                 />
             </div>
+            
+            
             <div className="code-section">
                 <label htmlFor="code">Add Code Here:</label>
                 <textarea
