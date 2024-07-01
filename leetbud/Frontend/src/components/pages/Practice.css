@@ -1,13 +1,26 @@
-.card
-{
-  width: 1200px;
-  height: 600px;
-  border: 1px solid black;
-  border-radius: 20px;
-  margin: 50px auto;
-  background: white ;
+.card {
+    width: 1200px;
+    height: 600px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 50px auto;
+    background: white;
+    display: flex;
+    flex-direction: column; /* Ensures vertical stacking of elements */
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .card-back {
-  background:white;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden; /* Ensures the container itself doesn't scroll */
+}
+
+.half-height-content {
+    height: 50%; /* Each section takes half of the card */
+    overflow: auto; /* Allows scrolling within each section */
+    padding: 10px 0; /* Padding for aesthetic spacing, adjust as needed */
 }

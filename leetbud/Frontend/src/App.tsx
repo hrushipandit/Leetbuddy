@@ -10,8 +10,10 @@ import {AddEditProblems} from './components/pages/AddEditProblems';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Leetbud</h1>
+      <div className="App bg-gray-50 min-h-screen text-center p-5">
+          <h1 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-800 mb-6">
+              Leetbud
+          </h1>
         <Navbar/>
         <Routes>
         <Route path="/" element={<Home />} />

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import ReactCardFlip from 'react-card-flip';
 import axios from 'axios';
 import './Practice.css';
-
+import { ReactNode } from 'react';
 interface Problem {
     _id: string;
     question_name: string;
@@ -71,30 +71,49 @@ export const Practice = () => {
         }
     };
 
-    if (allReviewed) {
-        return <div><h2>Thank you for completing your reviews for today!</h2></div>;
-    }
+    const renderTextWithNewLines = (text: string): ReactNode => {
+        return text.split('\n').map((str: string, index: number) => (
+            <React.Fragment key={index}>
+                {str}
+                <br />
+            </React.Fragment>
+        ));
+    };
 
     const { question, question_name, code, notes } = problems[currentProblemIndex] || {};
 
     return (
         <div>
-            <ReactCardFlip flipDirection='horizontal' isFlipped={isFlipped}>
-                <div className='card' onClick={flipCard}>
-                    <h1>{question_name}</h1>
-                    <h1>{question}</h1>
-                </div>
-                <div className='card card-back' onClick={flipCard}>
-                    <h1>Code</h1>
-                    <p>{code}</p>
-                    <h1>Notes</h1>
-                    <p>{notes}</p>
-                </div>
-            </ReactCardFlip>
-            <button onClick={() => handleReviewSubmit(1)}>Hard</button>
-            <button onClick={() => handleReviewSubmit(3)}>Good</button>
-            <button onClick={() => handleReviewSubmit(5)}>Easy</button>
-            <button onClick={handleGetHint}>Get Hint</button>
+            {problems.length === 0 ? (
+                <div><h2>No problems are available for review today.</h2></div>
+            ) : (
+                !allReviewed ? (
+                    <>
+                            <ReactCardFlip flipDirection='horizontal' isFlipped={isFlipped}>
+                                <div className='card bg-white shadow-md cursor-pointer' onClick={flipCard}>
+                                    <h1 className="text-2xl font-bold">{question_name}</h1>
+                                    <p className="text-lg whitespace-pre-wrap overflow-auto full-height-content">{renderTextWithNewLines(question)}</p>
+                                </div>
+                                <div className='card card-back bg-white shadow-md cursor-pointer' onClick={flipCard}>
+                                    <div className="half-height-content">
+                                        <h1 className="text-2xl font-bold">Code</h1>
+                                        <pre className="text-left whitespace-pre-wrap overflow-auto text-sm bg-gray-100 p-3 rounded-lg">{code}</pre>
+                                    </div>
+                                    <div className="half-height-content">
+                                        <h1 className="text-2xl font-bold">Notes</h1>
+                                        <pre className="text-lg whitespace-pre-wrap">{renderTextWithNewLines(notes)}</pre>
+                                    </div>
+                                </div>
+                            </ReactCardFlip>
+                        <button className="mt-2 px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-700" onClick={() => handleReviewSubmit(1)}>Hard</button>
+                        <button className="mt-2 px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-700" onClick={() => handleReviewSubmit(3)}>Good</button>
+                        <button className="mt-2 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700" onClick={() => handleReviewSubmit(5)}>Easy</button>
+                        <button className="mt-2 px-4 py-2 bg-yellow-500 text-white rounded-md hover:bg-yellow-700" onClick={handleGetHint}>Get Hint</button>
+                    </>
+                ) : (
+                    <div><h2>Thank you for completing your reviews for today!</h2></div>
+                )
+            )}
         </div>
     );
 };

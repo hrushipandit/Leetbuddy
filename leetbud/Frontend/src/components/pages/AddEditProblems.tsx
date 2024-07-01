@@ -1,6 +1,5 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
-import './AddEditProblems.css'
 import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios'; // Import Axios for HTTP requests
 export const AddEditProblems = () => {
@@ -86,54 +85,66 @@ export const AddEditProblems = () => {
         }
     };
 
+    const isGenerateDisabled = !code.trim() || !question.trim() || !question_name.trim();
+
+
     return (
-        <div className="container">
-            <h1 className="title">Add/Edit Problems</h1>
-            <div className="question_name-section">
-                <label htmlFor="question_name">Add Question Name Here:</label>
+        <div className="container mx-auto p-4">
+            <h1 className="text-center text-xl font-bold mb-4">Add/Edit Problems</h1>
+            <div className="mb-4">
+                <label htmlFor="question_name" className="block text-sm font-medium text-gray-700">Add Question Name Here:</label>
                 <textarea
                     id="question_name"
                     placeholder="Type your question name here..."
                     value={question_name}
                     onChange={(e) => setQuestion_name(e.target.value)}
+                    className="mt-1 p-2 w-full border-gray-300 rounded-md shadow-sm"
                 />
-                <button onClick={fetchLeetCodeQuestion} disabled={fetchingQuestion}>
+                <button onClick={fetchLeetCodeQuestion} disabled={fetchingQuestion}
+                    className={`mt-2 px-4 py-2 text-white ${fetchingQuestion ? 'bg-gray-400' : 'bg-blue-500 hover:bg-blue-700'} rounded-md`}>
                     {fetchingQuestion ? 'Fetching...' : 'Fetch Question from LeetCode'}
                 </button>
             </div>
            
-               <div className="question-section">
-                <label htmlFor="question">Add Question Here:</label>
+            <div className="mb-4">
+                <label htmlFor="question" className="block text-sm font-medium text-gray-700">Add Question Here:</label>
                 <textarea
                     id="question"
                     placeholder="Type your question here..."
                     value={question}
                     onChange={(e) => setQuestion(e.target.value)}
+                    className="mt-1 p-2 w-full border-gray-300 rounded-md shadow-sm"
                 />
             </div>
             
             
-            <div className="code-section">
-                <label htmlFor="code">Add Code Here:</label>
+            <div className="mb-4">
+                <label htmlFor="code" className="block text-sm font-medium text-gray-700">Add Code Here:</label>
                 <textarea
                     id="code"
                     placeholder="Type your code here..."
                     value={code}
                     onChange={(e) => setCode(e.target.value)}
+                    className="mt-1 p-2 w-full border-gray-300 rounded-md shadow-sm"
                 />
             </div>
-            <div className="notes-section">
-                <label htmlFor="notes">Your Notes:</label>
+            <div className="mb-4">
+                <label htmlFor="notes" className="block text-sm font-medium text-gray-700">Your Notes:</label>
                 <textarea
                     id="notes"
                     placeholder="Write your notes here..."
                     value={notes}
                     onChange={(e) => setNotes(e.target.value)}
+                    className="mt-1 p-2 w-full border-gray-300 rounded-md shadow-sm"
                 />
-                <button onClick={handleGenerateNotes}>Generate Notes</button>
+                <button onClick={handleGenerateNotes}
+                    disabled={isGenerateDisabled}
+                    className={`mt-2 px-4 py-2 rounded-md text-white ${isGenerateDisabled ? 'bg-gray-400' : 'bg-indigo-500 hover:bg-indigo-600'}`}>
+                    Generate Notes
+                </button>
             </div>
-            <button className="submit-button" onClick={handleSubmit}>Submit</button>
-            <button className="go-back-button" onClick={goBack}>Go Back</button>
+            <button className="mt-2 w-full py-2 bg-green-500 hover:bg-green-700 text-white rounded-md" onClick={handleSubmit}>Submit</button>
+            <button className="mt-2 w-full py-2 bg-gray-500 hover:bg-gray-700 text-white rounded-md" onClick={goBack}>Go Back</button>
         </div>
     );
 

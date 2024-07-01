@@ -39,29 +39,21 @@ export const Navbar = () => {
     };
 
     return (
-        <nav className="navbar">
-            <div className="navbar-links">
-                <ul>
-                    <li>
-                        <Link to="/">Home</Link>
-                    </li>
-                    {isLoggedIn && (
-                        <>
-                            <li>
-                                <Link to="/practice">Practice</Link>
-                            </li>
-                            <li>
-                                <Link to="/problems">Problem List</Link>
-                            </li>
-                        </>
-                    )}
-                    {isLoggedIn ? (
-                        <button onClick={handleLogout}>Logout</button>
-                    ) : (
-                        <button onClick={handleLogin}>Login with Google</button>
-                    )}
-                </ul>
+        <nav className="bg-blue-700 py-2 px-4 shadow-md flex justify-between items-center">
+            <div className="flex space-x-4">
+                <Link to="/" className="text-white font-semibold hover:text-indigo-300">Home</Link>
+                {isLoggedIn && (
+                    <>
+                        <Link to="/practice" className="text-white font-semibold hover:text-indigo-300">Practice</Link>
+                        <Link to="/problems" className="text-white font-semibold hover:text-indigo-300">Problem List</Link>
+                    </>
+                )}
             </div>
+            {isLoggedIn ? (
+                <button onClick={handleLogout} className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Logout</button>
+            ) : (
+                <button onClick={handleLogin} className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">Login with Google</button>
+            )}
         </nav>
     );
 }

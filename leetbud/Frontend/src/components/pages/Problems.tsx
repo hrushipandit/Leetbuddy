@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';  // Make sure to import axios
-import './Problems.css';
+import axios from 'axios';
 import { Link, useNavigate } from "react-router-dom";
 
 interface Entry {
@@ -10,59 +9,53 @@ interface Entry {
     question_name: string;
 }
 
-
 function Problems() {
-    const [entries, setEntries] = useState<Entry[]>([]); // Define state inside the component
+    const [entries, setEntries] = useState<Entry[]>([]);
     const navigate = useNavigate();
-
 
     useEffect(() => {
         axios.get('http://localhost:5000/api/problems', { withCredentials: true })
             .then(response => {
                 setEntries(response.data);
-                console.log(entries);// Update state with fetched data
             })
             .catch(error => console.error('Error fetching data:', error));
-    }, []); // Empty dependency array means this runs once on component mount
-
-    const fetchEntries = () => {
-        axios.get('http://localhost:5000/api/problems', { withCredentials: true })
-            .then(response => {
-                setEntries(response.data);
-                console.log(entries);
-            })
-            .catch(error => console.error('Error fetching data:', error));
-    };
+    }, []);
 
     const deleteEntry = (id: string) => {
         axios.delete(`http://localhost:5000/api/problems/${id}`, { withCredentials: true })
             .then(() => {
-                fetchEntries();
+                setEntries(entries.filter(entry => entry._id !== id));
             })
             .catch(error => console.error('Error deleting entry:', error));
     };
 
     const handleEdit = (id: string) => {
-        navigate(`/AddEditProblems/${id}`); // Redirects to the edit page with the problem ID
+        navigate(`/AddEditProblems/${id}`);
     };
 
-
     return (
-        <div className="problems-container">
+        <div className="max-w-4xl mx-auto p-5">
             <ul>
-                <li>
-                    <Link to="/AddEditProblems" className="add-link">Add new Problems</Link>
-                    <button onClick={() => window.location.href = 'http://localhost:5000/download-entries'}>
+                <li className="mb-4">
+                    <Link to="/AddEditProblems" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        Add new Problems
+                    </Link>
+                    <button onClick={() => window.location.href = 'http://localhost:5000/download-entries'}
+                        className="ml-4 bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded">
                         Download Entries
                     </button>
                 </li>
-
-                {Array.isArray(entries) ? entries.map(entry => (
-                    <div key={entry._id}>
-                        <h3>Question:</h3>
-                        <p>{entry.question_name}</p>
-                        <button className="edit-button" onClick={() => handleEdit(entry._id)}>Edit</button>
-                        <button className="delete-button" onClick={() => deleteEntry(entry._id)}>Delete</button>
+                {Array.isArray(entries) && entries.length > 0 ? entries.map(entry => (
+                    <div key={entry._id} className="bg-gray-100 p-4 rounded shadow mb-3">
+                        <h3 className="font-bold text-lg mb-2">Question: {entry.question_name}</h3>
+                        <button className="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded mr-2"
+                            onClick={() => handleEdit(entry._id)}>
+                            Edit
+                        </button>
+                        <button className="bg-red-500 hover:bg-red-700 text-white py-2 px-4 rounded"
+                            onClick={() => deleteEntry(entry._id)}>
+                            Delete
+                        </button>
                     </div>
                 )) : <li>No problems found or data is not loaded yet.</li>}
             </ul>
