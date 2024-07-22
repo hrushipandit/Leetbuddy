@@ -59,6 +59,7 @@ passport.use(new GoogleStrategy({
                     googleId: profile.id,
                     code: 123,
                     notes: 123,
+                    question: 123,
                     question_name: 123123,
                 });
             }

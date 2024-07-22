@@ -3,12 +3,13 @@
     "",
     "\\leetbud",
     "\\leetbud\\BackendServices",
-    "\\leetbud\\BackendServices\\routes",
+    "\\leetbud\\BackendServices\\Tests",
+    "\\leetbud\\BackendServices\\Tests\\utils",
     "\\leetbud\\Frontend",
     "\\leetbud\\Frontend\\src",
     "\\leetbud\\Frontend\\src\\components",
     "\\leetbud\\Frontend\\src\\components\\pages"
   ],
-  "SelectedNode": "\\leetbud\\Frontend\\src\\components\\pages",
+  "SelectedNode": "\\leetbud\\Frontend\\src\\components\\pages\\Practice.tsx",
   "PreviewInSolutionExplorer": false
 }

@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\BackendServices",
+    "\\BackendServices\\Models",
+    "\\BackendServices\\routes",
+    "\\BackendServices\\tests",
+    "\\Frontend",
+    "\\Frontend\\public",
+    "\\Frontend\\src",
+    "\\Frontend\\src\\components",
+    "\\Frontend\\src\\components\\pages"
+  ],
+  "SelectedNode": "\\BackendServices\\tests\\selenium.test.js",
+  "PreviewInSolutionExplorer": false
+}

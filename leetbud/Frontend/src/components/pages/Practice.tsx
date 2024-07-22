@@ -92,7 +92,7 @@ export const Practice = () => {
                             <ReactCardFlip flipDirection='horizontal' isFlipped={isFlipped}>
                                 <div className='card bg-white shadow-md cursor-pointer' onClick={flipCard}>
                                     <h1 className="text-2xl font-bold">{question_name}</h1>
-                                    <p className="text-lg whitespace-pre-wrap overflow-auto full-height-content">{renderTextWithNewLines(question)}</p>
+                                    <p className="text-lg whitespace-pre-wrap overflow-auto full-height-content">{question}</p>
                                 </div>
                                 <div className='card card-back bg-white shadow-md cursor-pointer' onClick={flipCard}>
                                     <div className="half-height-content">
@@ -101,7 +101,7 @@ export const Practice = () => {
                                     </div>
                                     <div className="half-height-content">
                                         <h1 className="text-2xl font-bold">Notes</h1>
-                                        <pre className="text-lg whitespace-pre-wrap">{renderTextWithNewLines(notes)}</pre>
+                                        <pre className="text-lg whitespace-pre-wrap">{notes}</pre>
                                     </div>
                                 </div>
                             </ReactCardFlip>
