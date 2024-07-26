@@ -1,16 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\BackendServices",
-    "\\BackendServices\\Models",
-    "\\BackendServices\\routes",
-    "\\BackendServices\\tests",
     "\\Frontend",
-    "\\Frontend\\public",
-    "\\Frontend\\src",
-    "\\Frontend\\src\\components",
-    "\\Frontend\\src\\components\\pages"
+    "\\Frontend\\build",
+    "\\Frontend\\build\\static",
+    "\\Frontend\\build\\static\\css",
+    "\\Frontend\\build\\static\\js"
   ],
-  "SelectedNode": "\\BackendServices\\tests\\selenium.test.js",
+  "SelectedNode": "\\docker-compose.yml",
   "PreviewInSolutionExplorer": false
 }
