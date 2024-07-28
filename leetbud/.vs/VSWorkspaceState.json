@@ -1,12 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Frontend",
+    "\\BackendServices",
+    "\\BackendServices\\models",
     "\\Frontend\\build",
-    "\\Frontend\\build\\static",
-    "\\Frontend\\build\\static\\css",
-    "\\Frontend\\build\\static\\js"
+    "\\Frontend\\build\\static\\js",
+    "\\Frontend\\src"
   ],
-  "SelectedNode": "\\docker-compose.yml",
+  "SelectedNode": "\\BackendServices\\models\\UserEntry.js",
   "PreviewInSolutionExplorer": false
 }

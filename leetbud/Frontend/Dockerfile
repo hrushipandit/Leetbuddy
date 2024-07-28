@@ -10,6 +10,7 @@ run npm install
 
 # bundle app source inside the docker image
 copy . .
+RUN chmod +x node_modules/.bin/react-scripts 
 
 # build the application
 run npm run build

@@ -8,11 +8,16 @@ services:
       - MONGO_URI=mongodb://mongo:27017/UserEntry
     depends_on:
       - mongo
+    mem_limit: 500m
+
   frontend:
     build: ./Frontend
     ports:
       - "3000:80"
+    mem_limit: 500m
+
   mongo:
     image: mongo
     ports:
       - "27017:27017"
+    mem_limit: 500m
