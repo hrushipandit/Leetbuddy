@@ -24,7 +24,7 @@ export const Practice = () => {
 
     const fetchProblems = async () => {
         try {
-            const response = await axios.get('http://localhost:5000/api/problems/reviews', { withCredentials: true });
+            const response = await axios.get('https://www.leetbud.com/api/problems/reviews', { withCredentials: true });
             setProblems(response.data.length ? response.data : []);
             setAllReviewed(response.data.length === 0);
         } catch (error) {
@@ -40,7 +40,7 @@ export const Practice = () => {
     const handleReviewSubmit = async (quality: number) => {
         const problemId = problems[currentProblemIndex]._id;
         try {
-            await axios.put(`http://localhost:5000/api/problems/review/${problemId}`, { quality }, { withCredentials: true });
+            await axios.put(`https://www.leetbud.com/api/problems/review/${problemId}`, { quality }, { withCredentials: true });
             moveToNextProblem();
         } catch (error) {
             console.error('Error submitting review:', error);
@@ -50,7 +50,7 @@ export const Practice = () => {
     const handleGetHint = async () => {
         const { code, question_name, question } = problems[currentProblemIndex];
         try {
-            const response = await axios.post('http://localhost:5000/generate-hints', {
+            const response = await axios.post('https://www.leetbud.com/generate-hints', {
                 code,
                 question_name,
                 question,

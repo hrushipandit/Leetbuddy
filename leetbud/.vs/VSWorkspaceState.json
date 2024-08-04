@@ -3,10 +3,12 @@
     "",
     "\\BackendServices",
     "\\BackendServices\\models",
+    "\\BackendServices\\routes",
+    "\\BackendServices\\tests",
+    "\\Frontend",
     "\\Frontend\\build",
-    "\\Frontend\\build\\static\\js",
     "\\Frontend\\src"
   ],
-  "SelectedNode": "\\BackendServices\\models\\UserEntry.js",
+  "SelectedNode": "\\docker-compose.yml",
   "PreviewInSolutionExplorer": false
 }

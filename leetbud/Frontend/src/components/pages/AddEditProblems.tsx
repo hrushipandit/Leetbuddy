@@ -16,7 +16,7 @@ export const AddEditProblems = () => {
     useEffect(() => {
         if (id) {
             // If there's an ID, we're editing an existing problem
-            axios.get(`http://localhost:5000/api/problems/${id}`)
+            axios.get(`https://www.leetbud.com/api/problems/${id}`)
                 .then(response => {
                     const { code, notes, question_name, question } = response.data;
                     console.log(response.data);
@@ -42,7 +42,7 @@ export const AddEditProblems = () => {
         setFetchingQuestion(true);
 
         try {
-            const response = await axios.post('http://localhost:5000/fetch-leetcode-question', {
+            const response = await axios.post('https://www.leetbud.com/fetch-leetcode-question', {
                 questionName: question_name
             }, { withCredentials: true });
 
@@ -57,7 +57,7 @@ export const AddEditProblems = () => {
 
     const handleSubmit = async () => {
         const payload = { code, notes, question_name , question }; // No Google ID sent from client
-        const url = `http://localhost:5000/api/problems/${id ? id : ''}`;
+        const url = `https://www.leetbud.com/api/problems/${id ? id : ''}`;
         const method = id ? 'put' : 'post';
 
         try {
@@ -77,7 +77,7 @@ export const AddEditProblems = () => {
     const handleGenerateNotes = async () => {
         try {
             const payload = { code, question, question_name };
-            const response = await axios.post('http://localhost:5000/generate-notes', payload, { withCredentials: true });
+            const response = await axios.post('https://www.leetbud.com/generate-notes', payload, { withCredentials: true });
             setNotes(response.data.generatedNotes);
             console.log('Notes generated:', response.data.generatedNotes);
         } catch (error) {
@@ -100,10 +100,10 @@ export const AddEditProblems = () => {
                     onChange={(e) => setQuestion_name(e.target.value)}
                     className="mt-1 p-2 w-full border-gray-300 rounded-md shadow-sm"
                 />
-                <button onClick={fetchLeetCodeQuestion} disabled={fetchingQuestion}
+           {/*     <button onClick={fetchLeetCodeQuestion} disabled={fetchingQuestion}
                     className={`mt-2 px-4 py-2 text-white ${fetchingQuestion ? 'bg-gray-400' : 'bg-blue-500 hover:bg-blue-700'} rounded-md`}>
                     {fetchingQuestion ? 'Fetching...' : 'Fetch Question from LeetCode'}
-                </button>
+                </button>*/}
             </div>
            
             <div className="mb-4">

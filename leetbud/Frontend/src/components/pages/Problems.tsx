@@ -14,7 +14,7 @@ function Problems() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        axios.get('http://localhost:5000/api/problems', { withCredentials: true })
+        axios.get('https://www.leetbud.com/api/problems', { withCredentials: true })
             .then(response => {
                 setEntries(response.data);
             })
@@ -22,7 +22,7 @@ function Problems() {
     }, []);
 
     const deleteEntry = (id: string) => {
-        axios.delete(`http://localhost:5000/api/problems/${id}`, { withCredentials: true })
+        axios.delete(`https://www.leetbud.com/api/problems/${id}`, { withCredentials: true })
             .then(() => {
                 setEntries(entries.filter(entry => entry._id !== id));
             })
@@ -40,7 +40,7 @@ function Problems() {
                     <Link to="/AddEditProblems" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                         Add new Problems
                     </Link>
-                    <button onClick={() => window.location.href = 'http://localhost:5000/download-entries'}
+                    <button onClick={() => window.location.href = 'https://www.leetbud.com/download-entries'}
                         className="ml-4 bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded">
                         Download Entries
                     </button>

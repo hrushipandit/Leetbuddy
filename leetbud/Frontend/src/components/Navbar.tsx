@@ -13,7 +13,7 @@ export const Navbar = () => {
 
     const checkLoginStatus = async () => {
         try {
-            const response = await axios.get('http://localhost:5000/auth/login/status', { withCredentials: true });
+            const response = await axios.get('https://www.leetbud.com/auth/login/status', { withCredentials: true });
             console.log(response.data.isLoggedIn);
             setIsLoggedIn(response.data.isLoggedIn);
         } catch (error) {
@@ -23,12 +23,12 @@ export const Navbar = () => {
 
     const handleLogin = () => {
         // Redirect to Google OAuth login
-        window.location.href = 'http://localhost:5000/auth/google';
+        window.location.href = 'https://www.leetbud.com/auth/google';
     };
 
     const handleLogout = async () => {
         try {
-            axios.get('http://localhost:5000/logout', { withCredentials: true });
+            axios.get('https://www.leetbud.com/logout', { withCredentials: true });
             setIsLoggedIn(false);
             console.log(setIsLoggedIn);
             setTimeout(() => navigate('/'), 0);  // Use navigate to redirect
