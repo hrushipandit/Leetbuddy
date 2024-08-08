@@ -4,6 +4,8 @@ FROM node:20
 # Set the working directory
 WORKDIR /usr/src/app
 
+
+
 # installing google-chrome-stable 
 RUN apt-get install -y gnupg wget curl unzip --no-install-recommends; \
     wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | \

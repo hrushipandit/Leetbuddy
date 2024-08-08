@@ -2,13 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\BackendServices",
-    "\\BackendServices\\models",
     "\\BackendServices\\routes",
-    "\\BackendServices\\tests",
     "\\Frontend",
     "\\Frontend\\build",
-    "\\Frontend\\src"
+    "\\Frontend\\public",
+    "\\Frontend\\src",
+    "\\Frontend\\src\\components",
+    "\\Frontend\\src\\components\\pages",
+    "\\nginx"
   ],
-  "SelectedNode": "\\docker-compose.yml",
+  "SelectedNode": "\\Frontend\\src\\components\\pages\\Problems.tsx",
   "PreviewInSolutionExplorer": false
 }

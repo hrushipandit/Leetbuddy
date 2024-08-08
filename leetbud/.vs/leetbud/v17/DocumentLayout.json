@@ -3,40 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\src\\components\\pages\\Problems.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\src\\components\\pages\\Problems.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\Dockerfile||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BackendServices\\Dockerfile||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\src\\components\\pages\\Home.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\src\\components\\pages\\Home.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\Dockerfile||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\Dockerfile||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\src\\components\\pages\\AddEditProblems.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\src\\components\\pages\\AddEditProblems.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\src\\components\\Navbar.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\src\\components\\Navbar.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\server.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BackendServices\\server.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\routes\\problems.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BackendServices\\routes\\problems.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\routes\\selenium.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BackendServices\\routes\\selenium.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\nginx\\default.conf||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:nginx\\default.conf||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\routes\\excel.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BackendServices\\routes\\excel.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\default.conf||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\default.conf||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BackendServices\\.env||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\Dockerfile||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\Dockerfile||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\routes\\auth.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BackendServices\\routes\\auth.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\routes\\openai.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BackendServices\\routes\\openai.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\src\\App.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
@@ -47,40 +59,64 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\src\\index.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\src\\components\\pages\\AddEditProblems.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\src\\components\\pages\\AddEditProblems.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\src\\components\\pages\\Practice.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\src\\components\\pages\\Practice.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\nginx\\Dockerfile||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:nginx\\Dockerfile||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\src\\App.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\src\\App.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\build\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\build\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\src\\components\\pages\\Login.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\src\\components\\pages\\Login.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\ssl\\leetbud.com.crt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\ssl\\leetbud.com.crt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\Dockerfile||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BackendServices\\Dockerfile||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\nginx\\ssl\\leetbud.com.crt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:nginx\\ssl\\leetbud.com.crt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\nginx\\ssl\\leetbud.com.key||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:nginx\\ssl\\leetbud.com.key||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\ssl\\leetbud.com.key||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\ssl\\leetbud.com.key||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\routes\\excel.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BackendServices\\routes\\excel.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BackendServices\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\routes\\selenium.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BackendServices\\routes\\selenium.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\tests\\auth.test.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BackendServices\\tests\\auth.test.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\src\\components\\pages\\Problems.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\src\\components\\pages\\Problems.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\jest.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BackendServices\\jest.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\src\\components\\Navbar.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\src\\components\\Navbar.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\tests\\problems.test.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BackendServices\\tests\\problems.test.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\tests\\selenium.test.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BackendServices\\tests\\selenium.test.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\tests\\openai.test.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BackendServices\\tests\\openai.test.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\tests\\excel.test.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BackendServices\\tests\\excel.test.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -90,11 +126,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 28,
               "Title": "auth.test.js",
               "DocumentMoniker": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\tests\\auth.test.js",
               "RelativeDocumentMoniker": "BackendServices\\tests\\auth.test.js",
@@ -103,6 +139,19 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-07-29T07:10:34.688Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "selenium.js",
+              "DocumentMoniker": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\routes\\selenium.js",
+              "RelativeDocumentMoniker": "BackendServices\\routes\\selenium.js",
+              "ToolTip": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\routes\\selenium.js",
+              "RelativeToolTip": "BackendServices\\routes\\selenium.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-08-01T04:42:24.1Z",
               "IsPinned": true
             },
             {
@@ -115,130 +164,193 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
+              "Title": "package.json",
+              "DocumentMoniker": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\package.json",
+              "RelativeDocumentMoniker": "Frontend\\package.json",
+              "ToolTip": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\package.json",
+              "RelativeToolTip": "Frontend\\package.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-08T01:32:08.413Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "index.css",
+              "DocumentMoniker": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\src\\index.css",
+              "RelativeDocumentMoniker": "Frontend\\src\\index.css",
+              "ToolTip": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\src\\index.css",
+              "RelativeToolTip": "Frontend\\src\\index.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-08-07T22:18:41.111Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "server.js",
+              "DocumentMoniker": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\server.js",
+              "RelativeDocumentMoniker": "BackendServices\\server.js",
+              "ToolTip": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\server.js",
+              "RelativeToolTip": "BackendServices\\server.js",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAGUAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-08-06T02:03:15.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\Dockerfile",
               "RelativeDocumentMoniker": "Frontend\\Dockerfile",
               "ToolTip": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\Dockerfile",
               "RelativeToolTip": "Frontend\\Dockerfile",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-08-02T21:02:35.422Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "default.conf",
+              "DocumentMoniker": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\default.conf",
+              "RelativeDocumentMoniker": "Frontend\\default.conf",
+              "ToolTip": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\default.conf",
+              "RelativeToolTip": "Frontend\\default.conf",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-08-06T01:25:48.292Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": ".env",
+              "DocumentMoniker": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\.env",
+              "RelativeDocumentMoniker": "BackendServices\\.env",
+              "ToolTip": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\.env",
+              "RelativeToolTip": "BackendServices\\.env",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-08-02T21:02:35.422Z",
+              "WhenOpened": "2024-08-05T21:24:59.678Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Navbar.tsx",
+              "DocumentMoniker": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\src\\components\\Navbar.tsx",
+              "RelativeDocumentMoniker": "Frontend\\src\\components\\Navbar.tsx",
+              "ToolTip": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\src\\components\\Navbar.tsx",
+              "RelativeToolTip": "Frontend\\src\\components\\Navbar.tsx",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAwwD0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2024-08-07T21:42:32.957Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Problems.tsx",
-              "DocumentMoniker": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\src\\components\\pages\\Problems.tsx",
-              "RelativeDocumentMoniker": "Frontend\\src\\components\\pages\\Problems.tsx",
-              "ToolTip": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\src\\components\\pages\\Problems.tsx",
-              "RelativeToolTip": "Frontend\\src\\components\\pages\\Problems.tsx",
-              "ViewState": "AQIAACIAAAAAAAAAAAAQwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2024-08-02T07:32:06.887Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "problems.js",
-              "DocumentMoniker": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\routes\\problems.js",
-              "RelativeDocumentMoniker": "BackendServices\\routes\\problems.js",
-              "ToolTip": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\routes\\problems.js",
-              "RelativeToolTip": "BackendServices\\routes\\problems.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAABjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-08-02T06:51:53.997Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 2,
               "Title": "AddEditProblems.tsx",
               "DocumentMoniker": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\src\\components\\pages\\AddEditProblems.tsx",
               "RelativeDocumentMoniker": "Frontend\\src\\components\\pages\\AddEditProblems.tsx",
               "ToolTip": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\src\\components\\pages\\AddEditProblems.tsx",
               "RelativeToolTip": "Frontend\\src\\components\\pages\\AddEditProblems.tsx",
-              "ViewState": "AQIAAFYAAAAAAAAAAADwv2sAAAALAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAI4AAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2024-08-02T05:54:45.782Z"
+              "WhenOpened": "2024-08-07T21:43:12.602Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Dockerfile",
-              "DocumentMoniker": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\Dockerfile",
-              "RelativeDocumentMoniker": "BackendServices\\Dockerfile",
-              "ToolTip": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\Dockerfile",
-              "RelativeToolTip": "BackendServices\\Dockerfile",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-08-01T21:46:23.791Z",
+              "Title": "Home.tsx",
+              "DocumentMoniker": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\src\\components\\pages\\Home.tsx",
+              "RelativeDocumentMoniker": "Frontend\\src\\components\\pages\\Home.tsx",
+              "ToolTip": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\src\\components\\pages\\Home.tsx",
+              "RelativeToolTip": "Frontend\\src\\components\\pages\\Home.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2024-08-07T21:43:10.398Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "docker-compose.yml",
-              "DocumentMoniker": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\docker-compose.yml",
-              "RelativeDocumentMoniker": "docker-compose.yml",
-              "ToolTip": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\docker-compose.yml",
-              "RelativeToolTip": "docker-compose.yml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2024-08-01T21:46:17.655Z",
+              "Title": "Problems.tsx",
+              "DocumentMoniker": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\src\\components\\pages\\Problems.tsx",
+              "RelativeDocumentMoniker": "Frontend\\src\\components\\pages\\Problems.tsx",
+              "ToolTip": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\src\\components\\pages\\Problems.tsx",
+              "RelativeToolTip": "Frontend\\src\\components\\pages\\Problems.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2024-08-07T21:42:58.396Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "openai.js",
-              "DocumentMoniker": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\routes\\openai.js",
-              "RelativeDocumentMoniker": "BackendServices\\routes\\openai.js",
-              "ToolTip": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\routes\\openai.js",
-              "RelativeToolTip": "BackendServices\\routes\\openai.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADYAAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-08-01T07:19:31.212Z"
+              "DocumentIndex": 16,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\nginx\\Dockerfile",
+              "RelativeDocumentMoniker": "nginx\\Dockerfile",
+              "ToolTip": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\nginx\\Dockerfile",
+              "RelativeToolTip": "nginx\\Dockerfile",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-08-05T02:11:45.084Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "excel.js",
-              "DocumentMoniker": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\routes\\excel.js",
-              "RelativeDocumentMoniker": "BackendServices\\routes\\excel.js",
-              "ToolTip": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\routes\\excel.js",
-              "RelativeToolTip": "BackendServices\\routes\\excel.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAA8AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-08-01T04:50:01.693Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "selenium.js",
-              "DocumentMoniker": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\routes\\selenium.js",
-              "RelativeDocumentMoniker": "BackendServices\\routes\\selenium.js",
-              "ToolTip": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\routes\\selenium.js",
-              "RelativeToolTip": "BackendServices\\routes\\selenium.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-08-01T04:42:24.1Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "App.tsx",
               "DocumentMoniker": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\src\\App.tsx",
               "RelativeDocumentMoniker": "Frontend\\src\\App.tsx",
               "ToolTip": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\src\\App.tsx",
               "RelativeToolTip": "Frontend\\src\\App.tsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2024-08-01T00:32:30.224Z"
+              "WhenOpened": "2024-08-07T21:42:20.084Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "docker-compose.yml",
+              "DocumentMoniker": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\docker-compose.yml",
+              "RelativeDocumentMoniker": "docker-compose.yml",
+              "ToolTip": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\docker-compose.yml",
+              "RelativeToolTip": "docker-compose.yml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2024-08-06T01:00:48.625Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "default.conf",
+              "DocumentMoniker": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\nginx\\default.conf",
+              "RelativeDocumentMoniker": "nginx\\default.conf",
+              "ToolTip": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\nginx\\default.conf",
+              "RelativeToolTip": "nginx\\default.conf",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-08-08T02:13:39.697Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "auth.js",
+              "DocumentMoniker": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\routes\\auth.js",
+              "RelativeDocumentMoniker": "BackendServices\\routes\\auth.js",
+              "ToolTip": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\routes\\auth.js",
+              "RelativeToolTip": "BackendServices\\routes\\auth.js",
+              "ViewState": "AQIAACYAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-08-08T01:27:31.406Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "index.tsx",
               "DocumentMoniker": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\src\\index.tsx",
               "RelativeDocumentMoniker": "Frontend\\src\\index.tsx",
@@ -246,103 +358,139 @@
               "RelativeToolTip": "Frontend\\src\\index.tsx",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2024-08-01T00:32:21.197Z"
+              "WhenOpened": "2024-08-07T21:42:24.803Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "Navbar.tsx",
-              "DocumentMoniker": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\src\\components\\Navbar.tsx",
-              "RelativeDocumentMoniker": "Frontend\\src\\components\\Navbar.tsx",
-              "ToolTip": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\src\\components\\Navbar.tsx",
-              "RelativeToolTip": "Frontend\\src\\components\\Navbar.tsx",
+              "Title": "Practice.tsx",
+              "DocumentMoniker": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\src\\components\\pages\\Practice.tsx",
+              "RelativeDocumentMoniker": "Frontend\\src\\components\\pages\\Practice.tsx",
+              "ToolTip": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\src\\components\\pages\\Practice.tsx",
+              "RelativeToolTip": "Frontend\\src\\components\\pages\\Practice.tsx",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2024-08-01T00:32:12.11Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "auth.js",
-              "DocumentMoniker": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\routes\\auth.js",
-              "RelativeDocumentMoniker": "BackendServices\\routes\\auth.js",
-              "ToolTip": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\routes\\auth.js",
-              "RelativeToolTip": "BackendServices\\routes\\auth.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-07-31T22:22:43.296Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "jest.config.js",
-              "DocumentMoniker": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\jest.config.js",
-              "RelativeDocumentMoniker": "BackendServices\\jest.config.js",
-              "ToolTip": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\jest.config.js",
-              "RelativeToolTip": "BackendServices\\jest.config.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-07-29T07:58:22.899Z"
+              "WhenOpened": "2024-08-07T21:43:03.005Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "selenium.test.js",
-              "DocumentMoniker": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\tests\\selenium.test.js",
-              "RelativeDocumentMoniker": "BackendServices\\tests\\selenium.test.js",
-              "ToolTip": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\tests\\selenium.test.js",
-              "RelativeToolTip": "BackendServices\\tests\\selenium.test.js",
-              "ViewState": "AQIAABMAAAAAAAAAAAAhwCQAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-07-29T07:11:03.204Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "problems.test.js",
-              "DocumentMoniker": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\tests\\problems.test.js",
-              "RelativeDocumentMoniker": "BackendServices\\tests\\problems.test.js",
-              "ToolTip": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\tests\\problems.test.js",
-              "RelativeToolTip": "BackendServices\\tests\\problems.test.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-07-29T07:10:58.802Z"
+              "Title": "App.css",
+              "DocumentMoniker": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\src\\App.css",
+              "RelativeDocumentMoniker": "Frontend\\src\\App.css",
+              "ToolTip": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\src\\App.css",
+              "RelativeToolTip": "Frontend\\src\\App.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-08-07T21:42:19.138Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "openai.test.js",
-              "DocumentMoniker": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\tests\\openai.test.js",
-              "RelativeDocumentMoniker": "BackendServices\\tests\\openai.test.js",
-              "ToolTip": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\tests\\openai.test.js",
-              "RelativeToolTip": "BackendServices\\tests\\openai.test.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-07-29T07:10:53.316Z"
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\build\\index.html",
+              "RelativeDocumentMoniker": "Frontend\\build\\index.html",
+              "ToolTip": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\build\\index.html",
+              "RelativeToolTip": "Frontend\\build\\index.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-08-07T22:10:13.573Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
-              "Title": "excel.test.js",
-              "DocumentMoniker": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\tests\\excel.test.js",
-              "RelativeDocumentMoniker": "BackendServices\\tests\\excel.test.js",
-              "ToolTip": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\tests\\excel.test.js",
-              "RelativeToolTip": "BackendServices\\tests\\excel.test.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAABIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-07-29T07:10:44.338Z"
+              "Title": "Login.tsx",
+              "DocumentMoniker": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\src\\components\\pages\\Login.tsx",
+              "RelativeDocumentMoniker": "Frontend\\src\\components\\pages\\Login.tsx",
+              "ToolTip": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\src\\components\\pages\\Login.tsx",
+              "RelativeToolTip": "Frontend\\src\\components\\pages\\Login.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2024-08-07T21:43:08.431Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "server.js",
-              "DocumentMoniker": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\server.js",
-              "RelativeDocumentMoniker": "BackendServices\\server.js",
-              "ToolTip": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\server.js",
-              "RelativeToolTip": "BackendServices\\server.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHIAAAAAAAAA",
+              "DocumentIndex": 20,
+              "Title": "leetbud.com.crt",
+              "DocumentMoniker": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\ssl\\leetbud.com.crt",
+              "RelativeDocumentMoniker": "Frontend\\ssl\\leetbud.com.crt",
+              "ToolTip": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\ssl\\leetbud.com.crt",
+              "RelativeToolTip": "Frontend\\ssl\\leetbud.com.crt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|",
+              "WhenOpened": "2024-08-06T07:28:54.525Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "excel.js",
+              "DocumentMoniker": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\routes\\excel.js",
+              "RelativeDocumentMoniker": "BackendServices\\routes\\excel.js",
+              "ToolTip": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\routes\\excel.js",
+              "RelativeToolTip": "BackendServices\\routes\\excel.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-07-26T21:03:28.887Z"
+              "WhenOpened": "2024-08-06T18:23:48.051Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\Dockerfile",
+              "RelativeDocumentMoniker": "BackendServices\\Dockerfile",
+              "ToolTip": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\Dockerfile",
+              "RelativeToolTip": "BackendServices\\Dockerfile",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-08-06T00:52:29.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "leetbud.com.key",
+              "DocumentMoniker": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\ssl\\leetbud.com.key",
+              "RelativeDocumentMoniker": "Frontend\\ssl\\leetbud.com.key",
+              "ToolTip": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\Frontend\\ssl\\leetbud.com.key",
+              "RelativeToolTip": "Frontend\\ssl\\leetbud.com.key",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-08-06T07:28:59.543Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "package.json",
+              "DocumentMoniker": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\package.json",
+              "RelativeDocumentMoniker": "BackendServices\\package.json",
+              "ToolTip": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\BackendServices\\package.json",
+              "RelativeToolTip": "BackendServices\\package.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-06T18:15:41.717Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "leetbud.com.key",
+              "DocumentMoniker": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\nginx\\ssl\\leetbud.com.key",
+              "RelativeDocumentMoniker": "nginx\\ssl\\leetbud.com.key",
+              "ToolTip": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\nginx\\ssl\\leetbud.com.key",
+              "RelativeToolTip": "nginx\\ssl\\leetbud.com.key",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-08-05T02:56:34.218Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "leetbud.com.crt",
+              "DocumentMoniker": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\nginx\\ssl\\leetbud.com.crt",
+              "RelativeDocumentMoniker": "nginx\\ssl\\leetbud.com.crt",
+              "ToolTip": "C:\\Users\\hrush\\Desktop\\Personal Projects\\Leetbud\\leetbud\\nginx\\ssl\\leetbud.com.crt",
+              "RelativeToolTip": "nginx\\ssl\\leetbud.com.crt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAZAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|",
+              "WhenOpened": "2024-08-05T02:55:59.03Z"
             }
           ]
         }
