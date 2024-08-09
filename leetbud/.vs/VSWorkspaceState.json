@@ -2,15 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\BackendServices",
+    "\\BackendServices\\models",
     "\\BackendServices\\routes",
+    "\\BackendServices\\tests",
     "\\Frontend",
-    "\\Frontend\\build",
-    "\\Frontend\\public",
     "\\Frontend\\src",
     "\\Frontend\\src\\components",
     "\\Frontend\\src\\components\\pages",
     "\\nginx"
   ],
-  "SelectedNode": "\\Frontend\\src\\components\\pages\\Problems.tsx",
+  "SelectedNode": "\\BackendServices\\models\\UserEntry.js",
   "PreviewInSolutionExplorer": false
 }

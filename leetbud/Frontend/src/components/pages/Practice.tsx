@@ -11,17 +11,18 @@ interface Problem {
     notes: string;
     nextReviewDate: Date;
 }
-
+// The Practice component for reviewing problems
 export const Practice = () => {
     const [isFlipped, setIsFlipped] = useState(false);
     const [problems, setProblems] = useState<Problem[]>([]);
     const [currentProblemIndex, setCurrentProblemIndex] = useState(0);
     const [allReviewed, setAllReviewed] = useState(false); 
-
+    // Fetch problems on component mount
     useEffect(() => {
         fetchProblems();
     }, []);
 
+    // Fetch problems from the server that are due for review
     const fetchProblems = async () => {
         try {
             const response = await axios.get('https://www.leetbud.com/api/problems/reviews', { withCredentials: true });
@@ -31,12 +32,12 @@ export const Practice = () => {
             console.error('Error fetching problems:', error);
         }
     };
-
+    // Toggle card flip state
     const flipCard = () => {
         setIsFlipped(!isFlipped);
     };
 
-
+    // Handle the review quality submission and move to next problem
     const handleReviewSubmit = async (quality: number) => {
         const problemId = problems[currentProblemIndex]._id;
         try {
@@ -47,6 +48,7 @@ export const Practice = () => {
         }
     };
 
+    // Fetch hint for the current problem
     const handleGetHint = async () => {
         const { code, question_name, question } = problems[currentProblemIndex];
         try {
@@ -62,6 +64,7 @@ export const Practice = () => {
         }
     };
 
+    // Move to the next problem in the list or wrap around
     const moveToNextProblem = () => {
         const nextIndex = (currentProblemIndex + 1) % problems.length;
         setCurrentProblemIndex(nextIndex);
@@ -71,6 +74,7 @@ export const Practice = () => {
         }
     };
 
+    // Render text with line breaks as separate React elements
     const renderTextWithNewLines = (text: string): ReactNode => {
         return text.split('\n').map((str: string, index: number) => (
             <React.Fragment key={index}>
@@ -81,7 +85,7 @@ export const Practice = () => {
     };
 
     const { question, question_name, code, notes } = problems[currentProblemIndex] || {};
-
+    // Render the component based on the current state
     return (
         <div>
             {problems.length === 0 ? (

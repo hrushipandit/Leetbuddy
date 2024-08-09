@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const UserEntry = require('../Models/UserEntry.js');  // Assuming UserEntry is the model
 
+// Describe block for grouping related tests of the UserEntry schema
 describe('UserEntry Schema', () => {
     it('should have the necessary fields with required attributes', () => {
         const schemaPaths = UserEntry.schema.paths;

@@ -1,5 +1,8 @@
 import React from 'react'
-
+/**
+ * Home component that serves as the landing page for Leetbud.
+ * It provides a brief overview of the app and lists its main features.
+ */
 export const Home = () => {
     return (
         <div className="min-h-screen bg-blue-50 flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8">

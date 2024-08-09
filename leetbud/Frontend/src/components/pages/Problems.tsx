@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link, useNavigate } from "react-router-dom";
 
+// Define the shape of each problem entry
 interface Entry {
     _id: string;
     code: string;
@@ -11,23 +12,27 @@ interface Entry {
 
 function Problems() {
     const [entries, setEntries] = useState<Entry[]>([]);
-    const navigate = useNavigate();
+    const navigate = useNavigate();  // Hook to programmatically navigate
 
+    // Fetch entries on component mount
     useEffect(() => {
         axios.get('https://www.leetbud.com/api/problems', { withCredentials: true })
             .then(response => {
-                setEntries(response.data);
+                setEntries(response.data); // Set fetched entries to state
             })
             .catch(error => console.error('Error fetching data:', error));
     }, []);
-
+    // Delete an entry by ID
     const deleteEntry = (id: string) => {
         axios.delete(`https://www.leetbud.com/api/problems/${id}`, { withCredentials: true })
             .then(() => {
+                // Update entries state by filtering out the deleted entry
                 setEntries(entries.filter(entry => entry._id !== id));
             })
             .catch(error => console.error('Error deleting entry:', error));
     };
+
+    // Navigate to the edit page for a specific entry
 
     const handleEdit = (id: string) => {
         navigate(`/AddEditProblems/${id}`);
@@ -37,11 +42,11 @@ function Problems() {
         <div className="max-w-4xl mx-auto p-5">
             <ul>
                 <li className="mb-4">
-                    <Link to="/AddEditProblems" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                    <Link to="/AddEditProblems" className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                         Add new Problems
                     </Link>
                     <button onClick={() => window.location.href = 'https://www.leetbud.com/download-entries'}
-                        className="ml-4 bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded">
+                        className="inline-block ml-4 bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded">
                         Download Entries
                     </button>
                 </li>

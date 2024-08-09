@@ -7,10 +7,12 @@ export const Navbar = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const navigate = useNavigate();  // Use navigate for redirection
 
+    // Check login status on component mount
     useEffect(() => {
         checkLoginStatus();
     }, []);
 
+    // Function to check if the user is currently logged in
     const checkLoginStatus = async () => {
         try {
             const response = await axios.get('https://www.leetbud.com/auth/login/status', { withCredentials: true });
@@ -20,20 +22,24 @@ export const Navbar = () => {
             console.error('Failed to check login status:', error);
         }
     };
-
+    // Redirect to Google OAuth login
     const handleLogin = () => {
         // Redirect to Google OAuth login
         window.location.href = 'https://www.leetbud.com/auth/google';
     };
 
+    // Handle user logout
     const handleLogout = async () => {
         try {
-            axios.get('https://www.leetbud.com/logout', { withCredentials: true });
+            await axios.get('https://www.leetbud.com/auth/logout', { withCredentials: true });
+            // Clear all cookies related to the domain
+            document.cookie.split(";").forEach(function (c) {
+                var cookieName = c.split('=')[0].trim();
+                document.cookie = cookieName + '=;expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=.leetbud.com; Secure; SameSite=None';
+            });
             setIsLoggedIn(false);
-            console.log(setIsLoggedIn);
-            setTimeout(() => navigate('/'), 0);  // Use navigate to redirect
+            setTimeout(() => navigate('/'), 0); // Missing comma corrected if part of larger object
         } catch (error) {
-            console.log(error);
             console.error('Logout failed:', error);
         }
     };

@@ -5,6 +5,12 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 
+/**
+ * Entry point for the React application. This file sets up the root rendering
+ * mechanism using ReactDOM and wraps the App component with BrowserRouter
+ * for SPA routing capabilities. Also includes setup for reporting web vitals.
+ */
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
@@ -16,7 +22,6 @@ root.render(
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+// Web vitals tool to measure the performance of the app
+// It can log results to the console or send them to an analytics endpoint
 reportWebVitals();

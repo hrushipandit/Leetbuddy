@@ -1,11 +1,15 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import axios from 'axios'; // Import Axios for HTTP requests
+import axios from 'axios'; 
+
+// Component for adding or editing problems, supporting both create and update operations
 export const AddEditProblems = () => {
-    axios.defaults.withCredentials = true;
-    const navigate = useNavigate(); // Hook for navigation
-    const { id } = useParams(); 
+    axios.defaults.withCredentials = true; // Enable Axios to send cookies with each request
+    const navigate = useNavigate(); // React Router hook for navigation
+    const { id } = useParams(); // Capture 'id' from URL if present
+
+    // State hooks for form fields and operational states
     const[code, setCode] = useState('');
     const [notes, setNotes] = useState('');
     const [question_name, setQuestion_name] = useState('');
@@ -13,6 +17,7 @@ export const AddEditProblems = () => {
     const [fetchingQuestion, setFetchingQuestion] = useState(false);
     const [fetchedQuestion, setFetchedQuestion] = useState('');
 
+    // Effect hook to load existing data if 'id' is present (edit mode)
     useEffect(() => {
         if (id) {
             // If there's an ID, we're editing an existing problem
@@ -29,10 +34,12 @@ export const AddEditProblems = () => {
         }
     }, [id]); 
 
+    // Navigate back to the previous page
     const goBack = () => {
       navigate(-1); // Navigates to the previous page
     };
 
+    // Fetch a question from LeetCode based on the 'question_name'
     const fetchLeetCodeQuestion = async () => {
         if (!question_name.trim()) {
             alert('Please enter a valid question name');
@@ -54,7 +61,7 @@ export const AddEditProblems = () => {
             setFetchingQuestion(false);
         }
     };
-
+    // Handle form submission for adding or updating a problem
     const handleSubmit = async () => {
         const payload = { code, notes, question_name , question }; // No Google ID sent from client
         const url = `https://www.leetbud.com/api/problems/${id ? id : ''}`;
@@ -74,6 +81,7 @@ export const AddEditProblems = () => {
         }
     };
 
+    // Generate notes for the current problem using an API call
     const handleGenerateNotes = async () => {
         try {
             const payload = { code, question, question_name };
@@ -85,9 +93,10 @@ export const AddEditProblems = () => {
         }
     };
 
+    // Disable 'Generate Notes' button if any fields are empty
     const isGenerateDisabled = !code.trim() || !question.trim() || !question_name.trim();
 
-
+    // Render form UI
     return (
         <div className="container mx-auto p-4">
             <h1 className="text-center text-xl font-bold mb-4">Add/Edit Problems</h1>
@@ -99,11 +108,7 @@ export const AddEditProblems = () => {
                     value={question_name}
                     onChange={(e) => setQuestion_name(e.target.value)}
                     className="mt-1 p-2 w-full border-gray-300 rounded-md shadow-sm"
-                />
-           {/*     <button onClick={fetchLeetCodeQuestion} disabled={fetchingQuestion}
-                    className={`mt-2 px-4 py-2 text-white ${fetchingQuestion ? 'bg-gray-400' : 'bg-blue-500 hover:bg-blue-700'} rounded-md`}>
-                    {fetchingQuestion ? 'Fetching...' : 'Fetch Question from LeetCode'}
-                </button>*/}
+                 />
             </div>
            
             <div className="mb-4">
@@ -114,6 +119,7 @@ export const AddEditProblems = () => {
                     value={question}
                     onChange={(e) => setQuestion(e.target.value)}
                     className="mt-1 p-2 w-full border-gray-300 rounded-md shadow-sm"
+                    rows={6}
                 />
             </div>
             
@@ -126,6 +132,7 @@ export const AddEditProblems = () => {
                     value={code}
                     onChange={(e) => setCode(e.target.value)}
                     className="mt-1 p-2 w-full border-gray-300 rounded-md shadow-sm"
+                    rows={6}
                 />
             </div>
             <div className="mb-4">
@@ -136,6 +143,7 @@ export const AddEditProblems = () => {
                     value={notes}
                     onChange={(e) => setNotes(e.target.value)}
                     className="mt-1 p-2 w-full border-gray-300 rounded-md shadow-sm"
+                    rows={6}
                 />
                 <button onClick={handleGenerateNotes}
                     disabled={isGenerateDisabled}

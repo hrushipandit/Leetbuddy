@@ -5,7 +5,7 @@ const ExcelJS = require('exceljs');
 const UserEntry = require('../models/UserEntry');
 const isAuthenticated = require('./utils/mockMiddleware').isAuthenticated;
 
-// Updated mock for ExcelJS as above
+// Mocking ExcelJS to bypass actual file writing during tests
 jest.mock('exceljs', () => {
     return {
         Workbook: jest.fn().mockImplementation(() => {
@@ -23,6 +23,7 @@ jest.mock('exceljs', () => {
     };
 });
 
+// Mocking UserEntry model to simulate database operations without real MongoDB
 jest.mock('../models/UserEntry', () => {
     return {
         find: jest.fn().mockReturnThis(),
@@ -37,10 +38,13 @@ const app = express();
 app.use(bodyParser.json());
 app.use(isAuthenticated);
 
+// Route that handles downloading entries as an Excel file
 app.get('/download-entries', isAuthenticated, async (req, res) => {
     try {
+        // Fetching entries based on user's Google ID
         const entries = await UserEntry.find({ googleId: req.user.googleId }).select('-_id question_name code notes');
 
+        // Setting up a new Excel workbook
         const workbook = new ExcelJS.Workbook();
         const worksheet = workbook.addWorksheet('My Problems');
 
@@ -49,14 +53,14 @@ app.get('/download-entries', isAuthenticated, async (req, res) => {
             { header: 'Code', key: 'code', width: 50 },
             { header: 'Notes', key: 'notes', width: 50 }
         ];
-
+        // Adding rows from fetched entries into the worksheet
         worksheet.addRows(entries);
 
-
+        // Setting headers for the response to indicate a file download
         res.setHeader('Content-Type', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
         res.setHeader('Content-Disposition', 'attachment; filename="entries.xlsx"');
 
-
+        // Writing the Excel content to the HTTP response
         await workbook.xlsx.write(res);
 
         res.status(200).end();
@@ -66,7 +70,7 @@ app.get('/download-entries', isAuthenticated, async (req, res) => {
     }
 });
 
-// Test cases
+// Test suite for /download-entries route
 describe('/download-entries route', () => {
     it('should download entries as an Excel file', async () => {
         const response = await request(app).get('/download-entries');

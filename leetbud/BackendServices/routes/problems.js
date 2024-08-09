@@ -14,7 +14,10 @@ function isAuthenticated(req, res, next) {
     next();
 }
 
-// Post Operation
+/**
+ * Route to create a new user entry.
+ * This endpoint requires authentication and will fail if necessary fields are missing.
+ */
 router.post('/', isAuthenticated, async (req, res) => {
     const { code, notes, question_name, question } = req.body;
     if (!code || !notes || !question_name || !question) {
@@ -36,7 +39,10 @@ router.post('/', isAuthenticated, async (req, res) => {
     }
 });
 
-// Update Operation
+/**
+ * Route to update an existing user entry by ID.
+ * Ensures that the logged-in user owns the entry before allowing updates.
+ */
 router.put('/:id', isAuthenticated, async (req, res) => {
     try {
         const { code, notes, question_name, question } = req.body;
@@ -58,7 +64,10 @@ router.put('/:id', isAuthenticated, async (req, res) => {
     }
 });
 
-// GET reviews for today
+/**
+ * Route to retrieve all entries that need review today.
+ * Filters entries by the next review date and ensures they are owned by the requesting user.
+ */
 router.get('/reviews', async (req, res) => {
     console.log("were here");
     const today = new Date();
@@ -70,12 +79,14 @@ router.get('/reviews', async (req, res) => {
 
     try {
         const reviewsToday = await UserEntry.find({
-            nextReviewDate: {
-                $gte: today, // Select entries where nextReviewDate is greater than or equal to start of today
-                $lt: tomorrow     // and less than the start of tomorrow
-            },
-            googleId: req.user.googleId // Assuming you want to fetch reviews specific to the logged-in user
+            $and: [
+                { nextReviewDate: { $gte: today } },  // Greater than or equal to start of today
+                { nextReviewDate: { $lt: tomorrow } },  // Less than tomorrow (not including)
+                { question_name: { $ne: "123123" } },  // Question name is not "123123"
+                { googleId: req.user.googleId }         // Matches the user's Google ID
+            ]
         });
+
 
         console.log("list of problem", reviewsToday);
 
@@ -92,7 +103,10 @@ router.get('/reviews', async (req, res) => {
 );
 
 
-// Get Operation
+/**
+ * Route to fetch all user entries.
+ * Filters out entries based on a placeholder question name, assuming this to indicate non-substantial entries.
+ */
 router.get('/', isAuthenticated, async (req, res) => {
     try {
         // Fetch entries where 'question_name' is not a placeholder
@@ -110,7 +124,10 @@ router.get('/', isAuthenticated, async (req, res) => {
     }
 });
 
-// ID get
+/**
+ * Route to fetch all user entries.
+ * Filters out entries based on a placeholder question name, assuming this to indicate non-substantial entries.
+ */
 router.get('/:id', isAuthenticated, async (req, res) => {
     try {
         const problem = await UserEntry.findById(req.params.id);
@@ -127,7 +144,10 @@ router.get('/:id', isAuthenticated, async (req, res) => {
 }); 
 
 
-// Delete Operation
+/**
+ * Route to delete a user entry by ID.
+ * Checks ownership before deletion to prevent unauthorized access.
+ */
 router.delete('/:id', isAuthenticated, async (req, res) => {
     try {
         const entry = await UserEntry.findById(req.params.id);
@@ -148,7 +168,10 @@ router.delete('/:id', isAuthenticated, async (req, res) => {
     }
 });
 
-// Update review details of an existing entry
+/**
+ * Route to update review details of an existing entry using the SuperMemo algorithm.
+ * Ensures that the logged-in user owns the entry before updating.
+ */
 router.put('/review/:id', isAuthenticated, async (req, res) => {
     const { quality } = req.body; // Quality of the review, passed from the client
 
