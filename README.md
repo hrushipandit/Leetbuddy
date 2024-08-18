@@ -30,7 +30,7 @@ Leetbud is a full-stack MERN application designed to assist programmers in prepa
 ### Local Setup
 1. Clone the repository:
 ```
-git clone https://github.com/yourgithubusername/leetbud.git
+git clone https://github.com/hrushipandit/Leetbuddy
 ```
 Navigate to the project directory:
 ```
